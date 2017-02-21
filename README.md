@@ -1,0 +1,2 @@
+# SECH
+O SECH (Sistema Eletrônico de Controle Hospitalar) é um software que tem por objetivo automatizar e aperfeiçoar processos relacionados ao controle de medicamento e o gerenciamento das prescrições médicas nos hospitais públicos. O sistema estará responsável pelo controle de medicamento individual diário de cada paciente, relação dos fornecedores, assim como o controle de estoque da farmácia do hospital.

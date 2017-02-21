@@ -1,0 +1,240 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Ati",
+				"Atividade_ensino"
+			],
+			[
+				"A",
+				"Atividade_administrativa"
+			],
+			[
+				"at",
+				"atividadeAdministrativa"
+			],
+			[
+				"atividade",
+				"atividadeAdministrativa"
+			],
+			[
+				"ati",
+				"atividadeAdministrativa"
+			],
+			[
+				"ativida",
+				"atividade_administrativa"
+			],
+			[
+				"ativiad",
+				"atividade_administrativas"
+			],
+			[
+				"Admini",
+				"atividadeAdministrativa"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 124.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/ethan/.config/sublime-text-3/Packages/User/JSON.sublime-settings",
+		"/home/ethan/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/ethan/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/ethan/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/ethan/pitRitGit/e-sare/artisan",
+		"/home/ethan/pitRitGit/e-sare/resources/views/welcome.blade.php",
+		"/home/ethan/pitRitGit/e-sare/resources/views/layouts/app.blade.php",
+		"/home/ethan/pitRitGit/e-sare/database/migrations/2016_09_05_085348_create_atividade_ensino_table.php",
+		"/home/ethan/pitRitGit/e-sare/resources/views/atividadeEnsino/show.blade.php",
+		"/home/ethan/pitRitGit/e-sare/resources/views/atividadeAdministrativa/show.blade.php",
+		"/home/ethan/pitRitGit/e-sare/vendor/zizaco/entrust/src/Entrust/Traits/EntrustPermissionTrait.php",
+		"/home/ethan/pitRitGit/e-sare/app/Http/routes.php",
+		"/home/ethan/pitRitGit/e-sare/database/migrations/2016_09_04_213546_create_atividade_administrativa_table.php",
+		"/home/ethan/pitRitGit/e-sare/app/Http/Controllers/AtividadeAdministrativaController.php",
+		"/home/ethan/pitRitGit/e-sare/app/Atividade_administrativa.php",
+		"/home/ethan/pitRitGit/e-sare/resources/views/atividadeAdministrativa/edit.blade.php",
+		"/home/ethan/pitRitGit/e-sare/resources/views/atividadeAdministrativa/create.blade.php",
+		"/home/ethan/pitRitGit/e-sare/database/migrations/2016_08_26_111248_create_coordenacaos_table.php",
+		"/home/ethan/pitRitGit/e-sare/resources/views/atividadeEnsino/edit.blade.php",
+		"/home/ethan/pitRitGit/e-sare/resources/views/atividadeEnsino/create.blade.php",
+		"/home/ethan/pitRitGit/e-sare/resources/views/atividadeEnsino/index.blade.php",
+		"/home/ethan/pitRitGit/e-sare/app/Http/Controllers/AtividadeEnsinoController.php",
+		"/home/ethan/pitRitGit/e-sare/app/Atividade_ensino.php",
+		"/home/ethan/pitRitGit/e-sare/app/Substituicao.php",
+		"/home/ethan/pitRitGit/e-sare/resources/views/atividadeAdministrativa/index.blade.php",
+		"/home/ethan/pitRitGit/e-sare/resources/views/professor/edit.blade.php",
+		"/home/ethan/pitRitGit/e-sare/app/AtividadeAdministrativa.php",
+		"/home/ethan/pitRitGit/e-sare/database/migrations/2016_09_04_221745_create_coordenacao_table.php",
+		"/home/ethan/pitRitGit/e-sare/config/database.php",
+		"/home/ethan/pitRitGit/e-sare/database/migrations/2016_09_04_213256_create_atividade_administrativas_table.php",
+		"/home/ethan/pitRitGit/permissoes",
+		"/home/ethan/pitRitGit/e-sare/resources/views/colegiado/index.blade.php",
+		"/home/ethan/pitRitGit/e-sare/app/Http/Controllers/ColegiadoController.php",
+		"/home/ethan/pitRitGit/e-sare/app/Departamento.php",
+		"/home/ethan/pitRitGit/e-sare/app/Http/Requests/AreaRequest.php",
+		"/home/ethan/pitRitGit/e-sare/app/Http/Controllers/ProfessorController.php",
+		"/home/ethan/pitRitGit/e-sare/LICENSE"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"/home/ethan/pitRitGit/e-sare/resources/views/substituicao",
+			"/home/ethan/pitRitGit/e-sare",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ensino",
+			"gestao_substituicao-list",
+			"-create",
+			"gestao_atividade_administrativa-create"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "phpunit.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 431.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
