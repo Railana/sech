@@ -9,7 +9,7 @@
     <body class="login-page">
     <div class="login-box">
         <div class="login-logo">
-            <a href="{{ url('/home') }}"><b>e-</b>SARE</a>
+            <a href="{{ url('/home') }}">SECH</a>
         </div><!-- /.login-logo -->
 
         @if (session('status'))

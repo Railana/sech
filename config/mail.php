@@ -54,7 +54,7 @@ return [
     | used globally for all e-mails that are sent by your application.
     |
     */
-      'from' => ['address' => 'laravel@hotmail.com', 'name' => 'Fabrica de Software'],
+      'from' => ['address' => 'laravel@hotmail.com', 'name' => 'Equipe Sech'],
     /*
     |--------------------------------------------------------------------------
     | E-Mail Encryption Protocol
