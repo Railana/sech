@@ -10,8 +10,8 @@ Log in
         <div class="login-box">
             <div class="login-logo">
                 <a href="{{ url('/home') }}">
-                    <!--<img src="C:/xampp/htdocs/sech/resources/views/auth/logosech.png" width="150" height="100" /> -->
-                    SECH</a>
+                    <img src="{{asset('/img/logosech.png')}}" width="150" height="100" /> 
+                </a>
             </div><!-- /.login-logo -->
 
             @if (count($errors) > 0)
@@ -52,7 +52,7 @@ Log in
                 </form>
 
                 <!-- O código abaixo perite logar através de redes sociais -->
-                <!-- @include('auth.partials.social_login') -->
+                 
 
                 <a href="{{ url('/password/reset') }}">Esqueceu sua senha?</a><br>
 
