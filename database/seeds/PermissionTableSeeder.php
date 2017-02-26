@@ -109,6 +109,27 @@ class PermissionTableSeeder extends Seeder {
                 'name' => 'relatorioUsuario',
                 'display_name' => 'Gerar relatório de usuários',
                 'description' => 'Gerar relatório de usuários'
+            ],
+            
+            //Especialidade
+            ['name' => 'especialidade-list',
+                'display_name' => 'Listagem de especialidades',
+                'description' => 'Listar especialidade'
+            ],
+            [
+                'name' => 'especialidade-create',
+                'display_name' => 'Cadastrar especialidade',
+                'description' => 'Cadastrar nova especialidade'
+            ],
+            [
+                'name' => 'especialidade-edit',
+                'display_name' => 'Editar especialidade',
+                'description' => 'Editar especialidade existente'
+            ],
+            [
+                'name' => 'especialidade-delete',
+                'display_name' => 'Excluir especialidade',
+                'description' => 'Delete especialidade'
             ]
         ];
 
