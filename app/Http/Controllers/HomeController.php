@@ -32,7 +32,7 @@ class HomeController extends Controller
       
 
        if(!empty($user->roles)){ 
-                $role;
+                $role = '';
                 foreach($user->roles as $v){
                     $role = $v->name ;
                 }

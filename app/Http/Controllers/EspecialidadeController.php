@@ -15,9 +15,9 @@ class EspecialidadeController extends Controller
      */
     public function index(Request $request)
     {
-        $especialidades = Especialidade::orderBy('id','DESC')->paginate(5);
+        $especialidades = Especialidade::orderBy('nomeespecialidade','asc')->paginate(15);
         return view('especialidade.index', compact('especialidades'))
-            ->with('i', ($request->input('page', 1) - 1) * 5);
+            ->with('i', ($request->input('page', 1) - 1) * 15);
     }
 
     /**
@@ -57,7 +57,7 @@ class EspecialidadeController extends Controller
     public function show($id)
     {
         $especialidade = especialidade::find($id);
-        return view('especialidade.show',compact('nomeespecialidade'));
+        return view('especialidade.show',compact('especialidade'));
     }
 
     /**
@@ -69,7 +69,7 @@ class EspecialidadeController extends Controller
     public function edit($id)
     {
         $especialidade = Especialidade::find($id);
-        return view('especialidade.edit',compact('nomeespecialidade'));
+        return view('especialidade.edit',compact('especialidade'));
     }
 
     /**
