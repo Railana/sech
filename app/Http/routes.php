@@ -80,13 +80,13 @@ Route::group(['middleware' => ['auth']], function() {
     
     //rotas de leito
     Route::group(['prefix' => 'leito', 'where' => ['id' => '[0-9]+']], function() {
-        Route::get('', ['as' => 'leito.index', 'uses' => 'MedicoController@index', 'middleware' => ['permission:gestao_medico-list|gestao_medico-create|gestao_medico-edit|gestao_medico-delete']]);
-        Route::get('/create', ['as' => 'leito.create', 'uses' => 'MedicoController@create', 'middleware' => ['permission:gestao_medico-create']]);
-        Route::post('/create', ['as' => 'leito.store', 'uses' => 'MedicoController@store', 'middleware' => ['permission:gestao_medico-create']]);
-        Route::get('/{id}', ['as' => 'leito.show', 'uses' => 'MedicoController@show']);
-        Route::get('/{id}/edit', ['as' => 'leito.edit', 'uses' => 'MedicoController@edit', 'middleware' => ['permission:gestao_medico-edit']]);
-        Route::patch('/{id}', ['as' => 'leito.update', 'uses' => 'MedicoController@update', 'middleware' => ['permission:gestao_medico-edit']]);
-        Route::delete('/{id}', ['as' => 'leito.destroy', 'uses' => 'MedicoController@destroy', 'middleware' => ['permission:gestao_medico-delete']]);
+        Route::get('', ['as' => 'leito.index', 'uses' => 'LeitoController@index', 'middleware' => ['permission:leito-list|leito-create|leito-edit|leito-delete']]);
+        Route::get('/create', ['as' => 'leito.create', 'uses' => 'LeitoController@create', 'middleware' => ['permission:leito-create']]);
+        Route::post('/create', ['as' => 'leito.store', 'uses' => 'LeitoController@store', 'middleware' => ['permission:leito-create']]);
+        Route::get('/{id}', ['as' => 'leito.show', 'uses' => 'LeitoController@show']);
+        Route::get('/{id}/edit', ['as' => 'leito.edit', 'uses' => 'LeitoController@edit', 'middleware' => ['permission:leito-edit']]);
+        Route::patch('/{id}', ['as' => 'leito.update', 'uses' => 'LeitoController@update', 'middleware' => ['permission:leito-edit']]);
+        Route::delete('/{id}', ['as' => 'leito.destroy', 'uses' => 'LeitoController@destroy', 'middleware' => ['permission:leito-delete']]);
     });
 
     
