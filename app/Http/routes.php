@@ -67,6 +67,16 @@ Route::group(['middleware' => ['auth']], function() {
         Route::delete('/{id}', ['as' => 'especialidade.destroy', 'uses' => 'EspecialidadeController@destroy', 'middleware' => ['permission:especialidade-delete']]);
     });
     
+    //rotas de clínica
+    Route::group(['prefix' => 'clinica', 'where' => ['id' => '[0-9]+']], function() {
+        Route::get('', ['as' => 'clinica.index', 'uses' => 'ClinicaController@index', 'middleware' => ['permission:clinica-list|clinica-create|clinica-edit|clinica-delete']]);
+        Route::get('/create', ['as' => 'clinica.create', 'uses' => 'ClinicaController@create', 'middleware' => ['permission:clinica-create']]);
+        Route::post('/create', ['as' => 'clinica.store', 'uses' => 'ClinicaController@store', 'middleware' => ['permission:clinica-create']]);
+        Route::get('/{id}', ['as' => 'clinica.show', 'uses' => 'ClinicaController@show']);
+        Route::get('/{id}/edit', ['as' => 'clinica.edit', 'uses' => 'ClinicaController@edit', 'middleware' => ['permission:clinica-edit']]);
+        Route::patch('/{id}', ['as' => 'clinica.update', 'uses' => 'ClinicaController@update', 'middleware' => ['permission:clinica-edit']]);
+        Route::delete('/{id}', ['as' => 'clinica.destroy', 'uses' => 'ClinicaController@destroy', 'middleware' => ['permission:clinica-delete']]);
+    });
     //rotas de médico
     Route::group(['prefix' => 'medico', 'where' => ['id' => '[0-9]+']], function() {
         Route::get('', ['as' => 'medico.index', 'uses' => 'MedicoController@index', 'middleware' => ['permission:gestao_medico-list|gestao_medico-create|gestao_medico-edit|gestao_medico-delete']]);
