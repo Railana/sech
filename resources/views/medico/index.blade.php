@@ -30,7 +30,6 @@
             <th>Nome</th>
             <th>CRM</th>
             <th>Especialidade</th>
-            <th>Assinatura</th>
             <th width="280px">Ação</th>
         </tr>
         @foreach ($medicos as $key => $medico)
@@ -38,8 +37,7 @@
             <td>{{ ++$i }}</td>
             <td>{{ $medico->usuario->name }}</td>
             <td>{{ $medico->crm }}</td>
-            <td>{{ $medico->especialidade->nomeespecialidade }}</td>            
-            <td>{{ $medico->assinatura }}</td><td>{{ $picture->name }}</td><td><img src="pic/{{ $picture->id }}"></td></tr></td>
+            <td>{{ $medico->especialidade->nomeespecialidade }}</td> 
             <td>
                 @permission('gestao_medico-create')
                 <a class="btn btn-info" href="{{ route('medico.show',$medico->id) }}">Visualizar</a>
