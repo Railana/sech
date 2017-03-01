@@ -130,7 +130,29 @@ class PermissionTableSeeder extends Seeder {
                 'name' => 'especialidade-delete',
                 'display_name' => 'Excluir especialidade',
                 'description' => 'Delete especialidade'
+            ],
+            //Médico
+            [
+                'name' => 'gestao_medico-list',
+                'display_name' => 'Listagem de médico',
+                'description' => 'Listar médico'
+            ],
+            [
+                'name' => 'gestao_medico-create',
+                'display_name' => 'Cadastrar médico',
+                'description' => 'Cadastrar novo médico'
+            ],
+            [
+                'name' => 'gestao_medico-edit',
+                'display_name' => 'Editar médico',
+                'description' => 'Editar médico'
+            ],
+            [
+                'name' => 'gestao_medico-delete',
+                'display_name' => 'Excluir médico',
+                'description' => 'Excluir médico'
             ]
+            
         ];
 
         foreach ($permission as $key => $value) {
