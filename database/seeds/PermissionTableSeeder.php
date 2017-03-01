@@ -112,6 +112,27 @@ class PermissionTableSeeder extends Seeder {
                 'name' => 'gestao_medico-delete',
                 'display_name' => 'Excluir médico',
                 'description' => 'Excluir médico'
+            ],
+            //Dentista
+            [
+                'name' => 'gestao_dentista-list',
+                'display_name' => 'Listagem de dentista',
+                'description' => 'Listar dentista'
+            ],
+            [
+                'name' => 'gestao_dentista-create',
+                'display_name' => 'Cadastrar dentista',
+                'description' => 'Cadastrar novo dentista'
+            ],
+            [
+                'name' => 'gestao_dentista-edit',
+                'display_name' => 'Editar dentista',
+                'description' => 'Editar dentista'
+            ],
+            [
+                'name' => 'gestao_dentista-delete',
+                'display_name' => 'Excluir dentista',
+                'description' => 'Excluir dentista'
             ]
             
         ];
