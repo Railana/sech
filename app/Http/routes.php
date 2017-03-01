@@ -53,17 +53,6 @@ Route::group(['middleware' => ['auth']], function() {
         Route::delete('/{id}', ['as' => 'itemCRUD2.destroy', 'uses' => 'ItemCRUD2Controller@destroy', 'middleware' => ['permission:item-delete']]);
     });
 
-    //rotas de periodo letivo
-    Route::group(['prefix' => 'periodoLetivo', 'where' => ['id' => '[0-9]+']], function() {
-        Route::get('', ['as' => 'periodoLetivo.index', 'uses' => 'PeriodoLetivoController@index', 'middleware' => ['permission:gestao_periodo_letivo-list|gestao_periodo_letivo-create|gestao_periodo_letivo-edit|gestao_periodo_letivo-delete']]);
-        Route::get('/create', ['as' => 'periodoLetivo.create', 'uses' => 'PeriodoLetivoController@create', 'middleware' => ['permission:gestao_periodo_letivo-create']]);
-        Route::post('/create', ['as' => 'periodoLetivo.store', 'uses' => 'PeriodoLetivoController@store', 'middleware' => ['permission:gestao_periodo_letivo-create']]);
-        Route::get('/{id}', ['as' => 'periodoLetivo.show', 'uses' => 'PeriodoLetivoController@show']);
-        Route::get('/{id}/edit', ['as' => 'periodoLetivo.edit', 'uses' => 'PeriodoLetivoController@edit', 'middleware' => ['permission:gestao_periodo_letivo-edit']]);
-        Route::patch('/{id}', ['as' => 'periodoLetivo.update', 'uses' => 'PeriodoLetivoController@update', 'middleware' => ['permission:gestao_periodo_letivo-edit']]);
-        Route::delete('/{id}', ['as' => 'periodoLetivo.destroy', 'uses' => 'PeriodoLetivoController@destroy', 'middleware' => ['permission:gestao_periodo_letivo-delete']]);
-    });
-
     //rotas para relatório
     Route::get('/relatorioUsuario', ['as' => 'relatorio.usuario', 'uses' => 'RelatorioController@relatorioUsuario', 'middleware' => ['permission:relatorioUsuario']]);
 
@@ -77,6 +66,5 @@ Route::group(['middleware' => ['auth']], function() {
         Route::patch('/{id}', ['as' => 'especialidade.update', 'uses' => 'EspecialidadeController@update', 'middleware' => ['permission:especialidade-edit']]);
         Route::delete('/{id}', ['as' => 'especialidade.destroy', 'uses' => 'EspecialidadeController@destroy', 'middleware' => ['permission:especialidade-delete']]);
     });
-
-    });
+});
 

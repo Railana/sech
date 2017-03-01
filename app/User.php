@@ -26,17 +26,5 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
-
-    public function professores(){
-        return $this->hasMany(Professor::class);
-    }
-     public function areas(){
-        return $this->hasMany(Area::class);
-    }
-     public function departamentos(){
-        return $this->hasMany(Departamento::class);
-    }
-     public function colegiados(){
-        return $this->hasMany(Colegiado::class);
-    }
+    
 }
