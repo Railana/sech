@@ -12,6 +12,7 @@ class PermissionTableSeeder extends Seeder {
      */
     public function run() {
         $permission = [
+            //Roles
             [
                 'name' => 'role-list',
                 'display_name' => 'Listagem de papeis',
@@ -32,46 +33,7 @@ class PermissionTableSeeder extends Seeder {
                 'display_name' => 'Excluir papel',
                 'description' => 'Excluir papel'
             ],
-            [
-                'name' => 'item-list',
-                'display_name' => 'Display Item Listing',
-                'description' => 'See only Listing Of Item'
-            ],
-            [
-                'name' => 'item-create',
-                'display_name' => 'Create Item',
-                'description' => 'Create New Item'
-            ],
-            [
-                'name' => 'item-edit',
-                'display_name' => 'Edit Item',
-                'description' => 'Edit Item'
-            ],
-            [
-                'name' => 'item-delete',
-                'display_name' => 'Delete Item',
-                'description' => 'Delete Item'
-            ],
-            [
-                'name' => 'gestao_periodo_letivo-list',
-                'display_name' => 'Listagem dos períodos letivos',
-                'description' => 'Listar períodos letivos'
-            ],
-            [
-                'name' => 'gestao_periodo_letivo-create',
-                'display_name' => 'Cadastrar período letivo',
-                'description' => 'Cadastrar novo período letivo'
-            ],
-            [
-                'name' => 'gestao_periodo_letivo-edit',
-                'display_name' => 'Editar período letivo',
-                'description' => 'Editar período letivo'
-            ],
-            [
-                'name' => 'gestao_periodo_letivo-delete',
-                'display_name' => 'Excluir período letivo',
-                'description' => 'Excluir período letivo'
-            ],  
+            // Usuários
             [
                 'name' => 'gestao_usuario-list',
                 'display_name' => 'Listagem de usuários',
@@ -93,8 +55,7 @@ class PermissionTableSeeder extends Seeder {
                 'description' => 'Excluir usuário'
             ],
             
-            // Telas iniciais
-            
+            // Telas iniciais            
             [
                 'name' => 'viewTelaProfessor',
                 'display_name' => 'Tela de professor',
