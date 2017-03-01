@@ -77,5 +77,19 @@ Route::group(['middleware' => ['auth']], function() {
         Route::patch('/{id}', ['as' => 'clinica.update', 'uses' => 'ClinicaController@update', 'middleware' => ['permission:clinica-edit']]);
         Route::delete('/{id}', ['as' => 'clinica.destroy', 'uses' => 'ClinicaController@destroy', 'middleware' => ['permission:clinica-delete']]);
     });
+    //rotas de médico
+    Route::group(['prefix' => 'medico', 'where' => ['id' => '[0-9]+']], function() {
+        Route::get('', ['as' => 'medico.index', 'uses' => 'MedicoController@index', 'middleware' => ['permission:gestao_medico-list|gestao_medico-create|gestao_medico-edit|gestao_medico-delete']]);
+        Route::get('/create', ['as' => 'medico.create', 'uses' => 'MedicoController@create', 'middleware' => ['permission:gestao_medico-create']]);
+        Route::post('/create', ['as' => 'medico.store', 'uses' => 'MedicoController@store', 'middleware' => ['permission:gestao_medico-create']]);
+        Route::get('/{id}', ['as' => 'medico.show', 'uses' => 'MedicoController@show']);
+        Route::get('/{id}/edit', ['as' => 'medico.edit', 'uses' => 'MedicoController@edit', 'middleware' => ['permission:gestao_medico-edit']]);
+        Route::patch('/{id}', ['as' => 'medico.update', 'uses' => 'MedicoController@update', 'middleware' => ['permission:gestao_medico-edit']]);
+        Route::delete('/{id}', ['as' => 'medico.destroy', 'uses' => 'MedicoController@destroy', 'middleware' => ['permission:gestao_medico-delete']]);
+    });
+
+    
+    
+
 });
 
